@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://Django:Cartman06@contactkeeper.mhkje.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
