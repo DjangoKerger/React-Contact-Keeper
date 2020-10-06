@@ -10,16 +10,16 @@ const User = require('../models/User');
 //@ description Register a user
 //@access       Public
 
-//post request with all the required checks, if checks are not passed 
+//post request with all the required checks, if error checks are not passed 
 //server will return status 400
 router.post(
     '/', 
     [
-        check('name', 'Name is required')
+        check('name', 'Please add name')
             .not()
             .isEmpty(),
         check('email', 'Please include a valid email').isEmail(),
-        check('password', 'please enter a password with 6 or more characters')
+        check('password', 'Please enter a password with 6 or more characters')
         .isLength({ min: 6})
 ], 
 async (req, res)=> {
