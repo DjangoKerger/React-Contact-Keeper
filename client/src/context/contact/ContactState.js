@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import uuid from 'uuid';
 import ContactContext from './ContactContext';
 import contactReducer from './ContactReducer';
 import {
@@ -11,7 +10,6 @@ import {
     FILTER_CONTACTS,
     CLEAR_FILTER
 } from '../types';
-import { text } from 'body-parser';
 
 const ContactState = props => {
     const initialState = {
