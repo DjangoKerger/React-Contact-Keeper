@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import AuthContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 import AlertContext from '../../context/alert/alertContext';
 
 const Login = props => {
@@ -50,7 +50,7 @@ const Login = props => {
             </h1>
             <form onSubmit={onSubmit}>
                <div className="form-group">
-                   <label htmlFor="email"> Email Address</label>
+                   <label htmlFor="email"> Email Address </label>
                    <input 
                     type="email" 
                     name="email" 
@@ -69,11 +69,11 @@ const Login = props => {
                     required    
                     />
                </div>
-               <input type="submit" value="Login" className="bt btn-primary btn-block"/>
+               <input type="submit" value="Login" className="btn btn-primary btn-block"/>
                  
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default Login;

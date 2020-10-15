@@ -30,7 +30,7 @@ async (req, res)=> {
         return res.status(400).json({errors: errors.array() });
     }
     
-    const { name, email, password } =req.body;
+    const { name, email, password } = req.body;
 
     try {
         let user = await User.findOne({ email });
@@ -55,7 +55,7 @@ async (req, res)=> {
             user: {
                 id: user.id
             }
-        }
+        };
 
         jwt.sign(
             payload, 
