@@ -55,7 +55,7 @@ const Register = props => {
             </h1>
             <form onSubmit={onSubmit}>
                <div className="form-group">
-                   <label htmlFor="name"> Name</label>
+                   <label htmlFor="name"> Name </label>
                    <input 
                     type="text" 
                     name="name" 
@@ -65,7 +65,7 @@ const Register = props => {
                     />
                </div>
                <div className="form-group">
-                   <label htmlFor="email"> Email Address</label>
+                   <label htmlFor="email"> Email Address </label>
                    <input 
                     type="email" 
                     name="email" 
@@ -75,7 +75,7 @@ const Register = props => {
                     />
                </div>
                <div className="form-group">
-                   <label htmlFor="passsword"> Password</label>
+                   <label htmlFor="passsword"> Password </label>
                    <input 
                     type="password" 
                     name="password" 
@@ -96,7 +96,7 @@ const Register = props => {
                     minLength='6'     
                     />
                </div>
-               <input type="submit" value="Register" className="bt btn-primary btn-block"/>
+               <input type="submit" value="Register" className="btn btn-primary btn-block"/>
                  
             </form>
         </div>
