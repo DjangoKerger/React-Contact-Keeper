@@ -87,7 +87,7 @@ router.put('/:id', auth, async (req, res)=> {
                  $set: contactFields},
                  { new: true });
 
-                 res.json(contact)
+                 res.json(contact);
         } catch (err) {
             console.err(err.mesage);
             res.status(500).send('Server error');
